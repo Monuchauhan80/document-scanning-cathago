@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Scanning App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Document Scanning App</h1>
+
+    <!-- Opening Section: Registration and Login -->
+    <div id="opening-section">
+        <!-- Registration Form -->
+        <div id="register-section">
+            <form id="register-form">
+                <h2>Register</h2>
+                <input type="text" id="register-username" placeholder="Username" required>
+                <input type="password" id="register-password" placeholder="Password" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+
+        <!-- Login Form -->
+        <div id="login-section">
+            <form id="login-form">
+                <h2>Login</h2>
+                <input type="text" id="login-username" placeholder="Username" required>
+                <input type="password" id="login-password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Profile Section -->
+    <div id="profile-section" class="hidden">
+        <h2>Profile</h2>
+        <p>Username: <span id="profile-username"></span></p>
+        <p>Credits: <span id="profile-credits"></span></p>
+    </div>
+
+    <!-- Upload Document Section -->
+    <div id="upload-section" class="hidden">
+        <form id="upload-form">
+            <h2>Upload Document</h2>
+            <textarea id="document-content" placeholder="Paste your document content here" required></textarea>
+            <button type="submit">Upload</button>
+        </form>
+
+        <!-- Matching Documents Section -->
+        <div id="matches-section">
+            <h2>Matching Documents</h2>
+            <ul id="matches-list"></ul>
+        </div>
+    </div>
+
+    <!-- Request Additional Credits Section -->
+    <div id="credit-request-section" class="hidden">
+        <form id="credit-request-form">
+            <h2>Request Additional Credits</h2>
+            <button type="submit">Request Credits</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
